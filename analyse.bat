@@ -1,2 +1,2 @@
-python ApkTool.py -analyse -inapk base.apk
+python ApkTool.py -analyse -inapk apk/app-debug.apk
 @pause

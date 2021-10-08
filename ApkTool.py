@@ -4,6 +4,10 @@ import sys
 import argparse
 from subprocess import Popen, PIPE
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 
 class ApkTool:
     def __init__(self, keystore=None, password=None, alias=None):

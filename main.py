@@ -1,5 +1,4 @@
 # coding=utf-8
-
 # 导入系统命令
 import os
 
@@ -13,7 +12,7 @@ def batch_apk():
             # 从后面 4 字节到结尾是 .apk ,
             # 则该文件是 APK 文件 , 对该文件进行解包
             if f[-4:] == '.apk':
-                os.system('python ApkTool.py --analyse --input ' + f)
+                os.system('python ApkTool.py -analyse -inapk apk/' + f)
 
 
 # 主函数入口
